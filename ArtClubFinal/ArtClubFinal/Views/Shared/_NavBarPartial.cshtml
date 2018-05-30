@@ -1,0 +1,22 @@
+﻿<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @Html.ActionLink(" ", "AdminIndex", "Home", new { area = "" }, new { @class = "fa fa-home fa-3x" })
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Pictures", "AdminIndex", "Pictures")</li>
+                <li>@Html.ActionLink("About", "AdminAbout", "Home")</li>
+                <li>@Html.ActionLink("Contact", "AdminContact", "Home")</li>
+                <li>@Html.ActionLink("Members", "Index", "Members")</li>
+                <li>@Html.ActionLink("Events", "Index", "Events")</li>
+            </ul>
+            @Html.Partial("_LoginPartial")
+        </div>
+    </div>
+</div>
